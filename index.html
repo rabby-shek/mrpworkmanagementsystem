@@ -30,28 +30,13 @@
 
 
     <script>
-        function verifyPassword() {
-            var pw = document.getElementById("pswd").value;
-            //check empty password field  
-            if (pw == "") {
-                alert("your password field is empty")
-                return false;
-            }
+       function Password() {
 
-            //minimum password length validation  
-            if (pw.length < 8) {
-                document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
-                return false;
-            }
+if (userInput == "JavaScript") {
+    window.open("home.html")
 
-            //maximum length of password validation  
-            if (pw.length > 15) {
-                document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";
-                return false;
-            } else {
-                alert("Password is correct");
-            }
-        }  
+    }
+    }
     </script>
 
 </head>
@@ -71,7 +56,7 @@
                         <i class="feather icon-unlock auth-icon"></i>
                     </div>
                     <h3 class="mb-4">Login</h3>
-                    <form  onsubmit ="return verifyPassword()">
+                    <form  onsubmit ="return Password() ">
                     <div class="input-group mb-3">
                         <input type="email" class="form-control" placeholder="Email">
                     </div>
